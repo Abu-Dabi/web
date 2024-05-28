@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Profile
 
+
 def sorted_profiles(request):
     # Get all profiles
     profiles = Profile.objects.all()

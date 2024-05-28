@@ -37,7 +37,7 @@ if (navigator.mediaDevices.getUserMedia) {
             captureBtn.classList.add('not-visible')
             const track = stream.getVideoTracks()[0]
             const imageCapture = new ImageCapture(track)
-            console.log(imageCapture) // Check if imageCapture is created successfully
+            console.log(imageCapture) // Check id imageCapture is created successfully
 
             imageCapture.takePhoto().then(blob => {
                 console.log("took photo:", blob)

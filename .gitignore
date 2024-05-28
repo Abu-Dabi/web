@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+
+# Django
+*.log
+*.pot
+*.pyc
+.coverage
+db.sqlite3
+/media
+
+venv/

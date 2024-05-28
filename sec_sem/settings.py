@@ -1,5 +1,3 @@
-from django.conf import settings
-from datetime import timedelta
 from pathlib import Path
 import os
 
@@ -28,7 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'sec_sem',
     'rest_framework',
     'rest_framework_simplejwt',
     'rest_framework.authtoken',
@@ -36,7 +34,6 @@ INSTALLED_APPS = [
     'allauth.account',
     'dj_rest_auth',
 
-    'logs',
     'profiles',
 ]
 
@@ -122,10 +119,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'statics/'
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
+
 
 STATICFILES_DIRS = [BASE_DIR / 'statics']
 MEDIA_ROOT = BASE_DIR / 'media'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
